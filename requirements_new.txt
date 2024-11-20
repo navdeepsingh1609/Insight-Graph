@@ -1,0 +1,10 @@
+streamlit
+pandas
+openai
+neo4j
+pyyaml
+matplotlib
+IPython
+langchain-community
+langchain-core
+pyvis
