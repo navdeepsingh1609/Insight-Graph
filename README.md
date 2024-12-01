@@ -35,10 +35,8 @@ Users from any domain—whether business, research, or education—can explore t
 
 <h2 id="credits"> :camera: App Demo</h2>
 
-<video controls>
-  <source src="Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch Video](Demo.mp4)
+
 
 <h2 id="credits"> :clipboard: Execution Instructions</h2>
 
