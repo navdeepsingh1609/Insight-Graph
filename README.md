@@ -1,5 +1,9 @@
 <h1 align="center"> Insight Graph </h1>
 
+<h2 id="credits"> :camera: App Demo</h2>
+
+[![Video Title](https://img.youtube.com/vi/HCiIxjhXq3Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=HCiIxjhXq3Y)
+
 Web Application:
 
 Ever faced complex queries that traditional databases just can’t handle? That’s where knowledge graphs and AI come in! By leveraging the power of Knowledge Graphs, OpenAI and Google Gemini LLM, 
@@ -26,14 +30,6 @@ Imagine a system that not only understands your data but also uncovers deeper co
 3. ⚡ Dynamic & Scalable: Effortlessly add new data and relationships without reworking the entire structure.
 
 Users from any domain—whether business, research, or education—can explore their data in ways traditional databases simply cannot. It’s all about making smarter, faster decisions!
-
-
-
-<h2 id="credits"> :camera: App Demo</h2>
-
-
-[![Video Title](https://img.youtube.com/vi/HCiIxjhXq3Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=HCiIxjhXq3Y)
-
 
 
 <h2 id="credits"> :clipboard: Execution Instructions</h2>
