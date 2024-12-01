@@ -31,7 +31,7 @@ Users from any domain—whether business, research, or education—can explore t
 
 <h2 id="credits"> :camera: App Demo</h2>
 
-[Watch Video](Demo.mp4)
+[![Video Title](https://img.youtube.com/vi/HCiIxjhXq3Y/0.jpg)](https://www.youtube.com/watch?v=HCiIxjhXq3Y)
 
 
 <h2 id="credits"> :clipboard: Execution Instructions</h2>
