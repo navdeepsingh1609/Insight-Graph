@@ -33,11 +33,12 @@ Users from any domain—whether business, research, or education—can explore t
 
 
 
-<h2 id="credits"> :camera: App Snapshots</h2>
+<h2 id="credits"> :camera: App Demo</h2>
 
-<img src="screenshots/web/cpu1.png" height="500em"/>&nbsp;<img src="screenshots/web/cpu2.png" height="500em" />
-&nbsp;<img src="screenshots/web/mem1.png" height="500em" /><img src="screenshots/web/mem2.png" height="500em"/>&nbsp;<img src="screenshots/web/mem3.png" height="500em" />
-&nbsp;<img src="screenshots/web/frag1.png" height="500em" /><img src="screenshots/web/frag2.png" height="500em"/>&nbsp;<img src="screenshots/web/info.png" height="500em" />
+<video controls>
+  <source src="Demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <h2 id="credits"> :clipboard: Execution Instructions</h2>
 
