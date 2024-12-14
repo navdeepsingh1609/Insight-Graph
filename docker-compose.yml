@@ -1,0 +1,18 @@
+services:
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    ports:
+      - "7474:7474"  # HTTP port
+      - "7687:7687"  # Bolt port
+    environment:
+      - NEO4J_AUTH=neo4j/StrongPassword123  # Update this to a stronger password
+      - NEO4JLABS_PLUGINS=["apoc"]
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*
+    volumes:
+      - $HOME/neo4j/data:/data
+      - $HOME/neo4j/plugins:/plugins
+volumes:
+  neo4j_data: 
+  neo4j_plugins:
+      
