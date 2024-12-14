@@ -1,6 +1,3 @@
-<p align="center"> 
-  <img src="screenshots/EnvisionLogo.png" width="100px" height="100px" style="border-radius:50%";>
-</p>
 
 <h1 align="center"> Insight Graph </h1>
 
