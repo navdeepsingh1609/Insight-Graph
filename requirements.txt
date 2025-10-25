@@ -21,3 +21,4 @@ langchain-core
 # Utilities
 pyyaml
 pyvis
+openai

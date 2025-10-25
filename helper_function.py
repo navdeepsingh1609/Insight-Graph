@@ -5,8 +5,9 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 from prompts import DESCRIPTION_PROMPT
 
-# neo4j-runway LLM helpers
-from neo4j_runway.llm.openai import OpenAIDiscoveryLLM, OpenAIDataModelingLLM
+# FIX: The neo4j-runway==0.4.3 library has a different structure.
+# We import the single 'LLM' class as shown in the 0.4.x docs.
+from neo4j_runway import LLM 
 
 # Logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -31,9 +32,7 @@ def get_llm(model: str, api_key: str):
 def get_description_list(df, api_key: str, model: str = "gpt3.5"):
     """
     Use an LLM to generate a dictionary mapping column -> short description.
-
-    FIX: This function is rewritten to use LangChain's JsonOutputParser
-    for robust parsing, instead of brittle string splitting (e.g., find('{')).
+    Uses LangChain's JsonOutputParser for robust parsing.
     """
     try:
         llm = get_llm(model, api_key)
@@ -41,14 +40,12 @@ def get_description_list(df, api_key: str, model: str = "gpt3.5"):
         sample_data = df.head(3).to_string(index=False)
 
         # 1. Setup the parser
-        # This will create a dictionary where keys are column names and values are descriptions
-        parser = JsonOutputParser(pydantic_object=None) # Using simple dict parser
+        parser = JsonOutputParser(pydantic_object=None) 
 
         # 2. Create a prompt template that includes format instructions
         prompt = PromptTemplate(
             template=DESCRIPTION_PROMPT,
             input_variables=["COLUMN_NAMES", "df"],
-            # Instruct the LLM to format its output as JSON
             partial_variables={"format_instructions": "Return a JSON object where each key is a column name and each value is its description."}
         )
 
@@ -74,14 +71,31 @@ def get_description_list(df, api_key: str, model: str = "gpt3.5"):
         # Fallback to empty descriptions
         return {col: "" for col in df.columns}
 
+# ==================================================================
+# !! FIX: These functions are modified for neo4j-runway==0.4.3 !!
+# The LLM constructor takes NO arguments.
+# ==================================================================
+
 def get_description_llm():
     """
-    neo4j-runway expects a Discovery LLM class. This returns that wrapper.
+    neo4j-runway 0.4.3 expects a single LLM class.
+    We initialize it with no arguments, as per the docs for that version.
+    It will pick up the OPENAI_API_KEY from the environment.
     """
-    return OpenAIDiscoveryLLM()
+    try:
+        return LLM()
+    except Exception as e:
+        logger.exception("Failed to initialize neo4j_runway.LLM()")
+        raise
 
 def get_modeling_llm():
     """
-    Return a modeling LLM wrapper used by neo4j-runway for graph modeling.
+    neo4j-runway 0.4.3 expects a single LLM class.
+    We initialize it with no arguments, as per the docs for that version.
+    It will pick up the OPENAI_API_KEY from the environment.
     """
-    return OpenAIDataModelingLLM()
+    try:
+        return LLM()
+    except Exception as e:
+        logger.exception("Failed to initialize neo4j_runway.LLM()")
+        raise
