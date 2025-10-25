@@ -1,11 +1,23 @@
+neo4j-runway==0.4.3
+
+# Core App
 streamlit
 pandas
+
+# LLM and Graph
 openai
 neo4j
-pyyaml
-matplotlib
-IPython
+
+# ===================================================
+# FIX: Pinning to the version that matches the
+# date of the blog posts (June 2024)
+neo4j-runway==0.4.3
+# ===================================================
+
+langchain
 langchain-community
 langchain-core
+
+# Utilities
+pyyaml
 pyvis
-prompts

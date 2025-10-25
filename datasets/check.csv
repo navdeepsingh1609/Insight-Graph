@@ -1,0 +1,29 @@
+Disease,Fever,Cough,Fatigue,Difficulty Breathing,Age,Gender,Blood Pressure,Cholesterol Level,Outcome Variable
+Influenza,Yes,No,Yes,Yes,19,Female,Low,Normal,Positive
+Common Cold,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Eczema,No,Yes,Yes,No,25,Female,Normal,Normal,Negative
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
+Asthma,Yes,Yes,No,Yes,25,Male,Normal,Normal,Positive
+Eczema,Yes,No,No,No,25,Female,Normal,Normal,Positive
+Influenza,Yes,Yes,Yes,Yes,25,Female,Normal,Normal,Positive
+Influenza,Yes,Yes,Yes,Yes,25,Female,Normal,Normal,Positive
+Hyperthyroidism,No,Yes,No,No,28,Female,Normal,Normal,Negative
+Hyperthyroidism,No,Yes,No,No,28,Female,Normal,Normal,Negative
+Asthma,Yes,No,No,Yes,28,Male,High,Normal,Positive
+Allergic Rhinitis,No,Yes,Yes,No,29,Female,Normal,Low,Negative
+Anxiety Disorders,No,Yes,No,No,29,Female,Normal,High,Negative
+Common Cold,No,No,No,No,29,Female,Low,Normal,Negative
+Diabetes,No,No,No,No,29,Male,Low,Normal,Negative
+Gastroenteritis,No,Yes,No,No,29,Female,Normal,Normal,Negative
+Pancreatitis,Yes,No,No,No,29,Female,High,Normal,Negative
+Rheumatoid Arthritis,No,Yes,Yes,Yes,29,Female,High,High,Negative
+Depression,Yes,Yes,Yes,Yes,29,Male,High,Normal,Positive
+Liver Cancer,Yes,Yes,Yes,Yes,29,Female,Normal,Normal,Positive
+Stroke,Yes,Yes,Yes,Yes,29,Female,Normal,Normal,Positive
+Urinary Tract Infection,Yes,Yes,Yes,No,29,Male,High,High,Positive
+Dengue Fever,Yes,No,Yes,No,30,Female,Normal,Normal,Negative
+Dengue Fever,Yes,No,Yes,No,30,Female,Normal,Normal,Negative
+Eczema,No,Yes,Yes,No,30,Male,High,High,Negative
+Gastroenteritis,Yes,Yes,Yes,No,30,Male,High,High,Negative
+Hepatitis,Yes,Yes,Yes,Yes,30,Male,High,Normal,Negative
+Kidney Cancer,No,No,Yes,No,30,Male,Normal,Normal,Negative

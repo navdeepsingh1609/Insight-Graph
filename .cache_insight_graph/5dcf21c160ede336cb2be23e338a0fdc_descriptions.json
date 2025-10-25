@@ -1,0 +1,12 @@
+{
+  "Disease": "The type of disease or health condition the individual is experiencing",
+  "Fever": "Whether the individual has a fever (Yes/No)",
+  "Cough": "Whether the individual has a cough (Yes/No)",
+  "Fatigue": "Whether the individual is experiencing fatigue (Yes/No)",
+  "Difficulty Breathing": "Whether the individual is experiencing difficulty breathing (Yes/No)",
+  "Age": "The age of the individual",
+  "Gender": "The gender of the individual",
+  "Blood Pressure": "The blood pressure level of the individual (Low/Normal)",
+  "Cholesterol Level": "The cholesterol level of the individual (Normal/Abnormal)",
+  "Outcome Variable": "The final outcome of the individual's health condition (Positive/Negative)"
+}
